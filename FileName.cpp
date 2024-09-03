@@ -221,4 +221,85 @@ int main()
     return 0;
 }
 */
+/*
+#pragma warning(disable:4996)
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int i,n,x,j;
+    while (scanf("%d", &n) != EOF)
+    {
+        j = 1;
+        for (i = 1; i <= n; i++;)
+        {
+            scanf("%d", &x);
+            if (x % 2 == 1 || x % 2 == -1)
+                j *= x;
+        }
+        printf("%d\n", j);
+    }
+    return 0;
+}
+*/
+/*
+#pragma warning(disable:4996)
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int m, n,a;
+    while (scanf("%d %d", &n, &m) != EOF)
+    {
+        long long int b=0,c=0,x1,x2;
+        if (n <= m) x1 = n, x2 = m;
+        else x1 = m, x2 = n;
+        for (a = x1; a <= x2; a++)
+        {
+            if (a % 2 == 0)  b += a * a;
+            if (a % 2 != 0) c += a * a * a;
+        }
+        printf("%lld %lld\n", b, c);
+    }
+    return 0;
+}
+*/
+/*
+#pragma warning(disable:4996)
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int  i,c=0,d=0,f=0;
+    double a, b;
+    while (scanf("%lf", &a) != EOF)
+    {
+        if (a == 0) break;
+        else
+        {
+            for (i = 1; i <= a; i++)
+            {
+                scanf("%lf", &b);
+                if (b < 0) c++;
+                if (b == 0) f++;
+                if (b > 0) d++;
+            }
+        }
+        printf("%d %d %d\n", c, f, d);
+        c = d = f = 0;
+    }
+    return 0;
+}
+*/
+
+#pragma warning(disable:4996)
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+
+}
+    return 0;
+}
+*/
 
