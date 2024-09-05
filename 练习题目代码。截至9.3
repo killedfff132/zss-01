@@ -1,4 +1,6 @@
-/*#pragma warning(disable:4996)
+//求算两点间距离。wrong
+/*
+#pragma warning(disable:4996)//VS2022软件需要的特殊申明（给scanf的）
 #include<stdio.h>
 #include<math.h>
 int main()
@@ -9,6 +11,7 @@ int main()
 	printf("%d", sqrt(x1 + x2));
 	return 0;
 }*/
+//验证算法*
 /*#include<stdio.h>
 #include<math.h>
 int main()
@@ -19,6 +22,7 @@ int main()
 	return 0;
 }
 */
+//两点间距离 应该✓的
 /*#pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -38,6 +42,7 @@ int main()
     return 0;
 }*/
 /*
+验证算法*
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -50,6 +55,7 @@ int main(void)
 }
 */
 /*
+还是两点距离
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -68,6 +74,7 @@ int main()
 }
 */
 /*
+运算球的体积
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -86,6 +93,7 @@ int main()
 }
 */
 /*
+验证算法*
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -102,6 +110,7 @@ int main()
 }
 */
 /*
+成绩转换 if算法
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -132,6 +141,7 @@ int main()
 */
 
 /*
+求绝对值 简单算法
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -146,6 +156,7 @@ int main()
 }
 */
 /*
+成绩转换 Switch算法
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -182,6 +193,7 @@ int main()
 */
 
 /*
+第几天？ Switch-case过程待改进
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -233,8 +245,9 @@ int main()
         j = 1;
         for (i = 1; i <= n; i++;)
         {
-            scanf("%d", &x);
-            if (x % 2 == 1 || x % 2 == -1)
+            scanf("%d", &x)；
+/*直接x%2！=0也许可以？*/
+if (x % 2 == 1 || x % 2 == -1)
                 j *= x;
         }
         printf("%d\n", j);
@@ -243,6 +256,7 @@ int main()
 }
 */
 /*
+G 平方和与立方和
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
@@ -257,7 +271,7 @@ int main()
         for (a = x1; a <= x2; a++)
         {
             if (a % 2 == 0)  b += a * a;
-            if (a % 2 != 0) c += a * a * a;
+    /*用else*/  if (a % 2 != 0) c += a * a * a;
         }
         printf("%lld %lld\n", b, c);
     }
@@ -265,6 +279,7 @@ int main()
 }
 */
 /*
+统计 数据？正数 ，负数和零。
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<math.h>
